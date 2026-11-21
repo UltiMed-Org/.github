@@ -3,7 +3,7 @@
 > [!WARNING]
 > **Release in progress.** UltiMed v2 is being released right now. As long as this notice is here, repositories, links and numbers are still being changed, and some of the v2 links below may not work yet.
 
-UltiMed is an open project for **French medical speech recognition**, built on a single consumer GPU. It produces a synthetic speech dataset of medical dictation (drug names and dosages, medical dictionary terms, clinical notes, radiology reports, acronyms), fine-tunes NVIDIA's `parakeet-tdt-0.6b-v3` on it, exports the result to ONNX so it runs locally (including in the browser), and ships regex rules that fix the errors the model still makes. Everything is published: data, code, weights and rules.
+UltiMed is an open project for **French medical speech recognition**, built on a single consumer GPU. It produces a synthetic speech dataset of medical dictation (drug names and dosages, medical dictionary terms, clinical notes, radiology reports, acronyms), fine-tunes parakeet-ultra (a post-trained NVIDIA `parakeet-tdt-0.6b-v3`) on it, exports the result to ONNX so it runs locally (including in the browser), and ships regex rules that fix the errors the model still makes. Everything is published: data, code, weights and rules.
 
 > [!NOTE]
 > **v3 is already planned, and it will be multilingual.** v1 and v2 are French only.
@@ -29,8 +29,8 @@ UltiMed is an open project for **French medical speech recognition**, built on a
 
 | | |
 |---|---|
-| [Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx) | the general (non medical) parakeet the UltiMed model starts from, in ONNX |
-| [Olicorne/parakeet-tdt-0.6b-v3-redux-UltiMed-experimental-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-redux-UltiMed-experimental-onnx) | an experimental weight blend of a smaller parakeet with UltiMed |
+| [Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx) | Parakeet Ultra in ONNX: moondream's post-trained `parakeet-tdt-0.6b-v3`, general purpose, which the UltiMed model is fine-tuned from |
+| [Olicorne/parakeet-tdt-0.6b-v3-redux-UltiMed-experimental-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-redux-UltiMed-experimental-onnx) | an experimental weight blend of the parakeet redux model with UltiMed v1, not a proper fine-tune |
 
 ## Previous release: v1 (obsolete)
 
