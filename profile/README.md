@@ -5,7 +5,7 @@
 
 UltiMed is an open project for **French medical speech recognition**, built on a single consumer GPU. It produces a synthetic speech dataset of medical dictation (drug names and dosages, medical dictionary terms, clinical notes, radiology reports, acronyms), fine-tunes parakeet-ultra (a post-trained NVIDIA `parakeet-tdt-0.6b-v3`) on it, exports the result to ONNX so it runs locally (including in the browser), and ships regex rules that fix the errors the model still makes. Everything is published: data, code, weights and rules.
 
-> [!NOTE]
+> [!WARNING]
 > **v3 is already planned, and it will be multilingual.** v1 and v2 are French only.
 
 ## Current release: v2
