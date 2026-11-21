@@ -21,6 +21,7 @@ UltiMed est un projet d'[Olivier Cornelis](https://olicorne.org) pour rendre la 
 | Modèle | [Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v2-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v2-onnx) sur Hugging Face (ONNX, fp32 / fp16 / int8 / w4a8) |
 | Scripts du jeu de données | [UltiMed-ASR-FR-v2-scripts](https://github.com/UltiMed-Org/UltiMed-ASR-FR-v2-scripts) : génération du texte, synthèse vocale, contrôle qualité, publication |
 | Scripts d'entraînement | [UltiMed-ASR-FR-v2-NeMo_training_scripts](https://github.com/UltiMed-Org/UltiMed-ASR-FR-v2-NeMo_training_scripts) : le fork de NeMo utilisé pour affiner le modèle |
+| Configuration de synthèse vocale | [UltiMed-ASR-FR-v2-Voxtral](https://github.com/UltiMed-Org/UltiMed-ASR-FR-v2-Voxtral) : le banc TTS Voxtral (vLLM + vllm-omni patché) où les cinq voix de la v2 ont été construites et servies |
 | Corrections d'erreurs | [UltiMed-ASR-FR-v2-regex-fixes](https://github.com/UltiMed-Org/UltiMed-ASR-FR-v2-regex-fixes) : règles regex et tables de correspondance qui corrigent les erreurs restantes du modèle |
 
 ## L'utiliser
