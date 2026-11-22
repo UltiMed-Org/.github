@@ -1,5 +1,3 @@
-<p align="center"><img src="https://raw.githubusercontent.com/UltiMed-Org/.github/main/profile/logo.svg" alt="UltiMed logo" width="140"></p>
-
 # UltiMed
 
 [English version](https://github.com/UltiMed-Org)
