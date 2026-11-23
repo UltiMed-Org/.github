@@ -16,7 +16,7 @@ UltiMed is a project by [Olivier Cornelis](https://olicorne.org) to make medical
 |---|---|
 | Dataset | [Olicorne/UltiMed-ASR-FR-v2](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v2) on Hugging Face |
 | Model | [Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v2-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v2-onnx) on Hugging Face (ONNX, fp32 / fp16 / int8 / w4a8) |
-| Small model (experimental) | [Olicorne/parakeet-tdt-0.6b-v3-redux-UltiMed-experimental-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-redux-UltiMed-experimental-onnx): the 2-bit parakeet redux model with the UltiMed v2 fine-tuning change added, about 3 times smaller than the int8 model, CPU only |
+| Small model (experimental) | [Olicorne/parakeet-tdt-0.6b-v3-redux-UltiMed-v2-experimental-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-redux-UltiMed-v2-experimental-onnx): the 2-bit parakeet redux model with the UltiMed v2 fine-tuning change added, about 3 times smaller than the int8 model, CPU only |
 | Dataset scripts | [UltiMed-ASR-FR-v2-scripts](https://github.com/UltiMed-Org/UltiMed-ASR-FR-v2-scripts): text generation, speech synthesis, quality control, release |
 | Training scripts | [UltiMed-ASR-FR-v2-NeMo_training_scripts](https://github.com/UltiMed-Org/UltiMed-ASR-FR-v2-NeMo_training_scripts): the NeMo fork used to fine-tune the model |
 | Speech synthesis setup | [UltiMed-ASR-FR-v2-Voxtral](https://github.com/UltiMed-Org/UltiMed-ASR-FR-v2-Voxtral): the Voxtral TTS harness (vLLM + patched vllm-omni) where the five v2 voices were built and served |

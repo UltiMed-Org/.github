@@ -16,7 +16,7 @@ UltiMed est un projet d'[Olivier Cornelis](https://olicorne.org) pour rendre la 
 |---|---|
 | Jeu de données | [Olicorne/UltiMed-ASR-FR-v2](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v2) sur Hugging Face |
 | Modèle | [Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v2-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v2-onnx) sur Hugging Face (ONNX, fp32 / fp16 / int8 / w4a8) |
-| Petit modèle (expérimental) | [Olicorne/parakeet-tdt-0.6b-v3-redux-UltiMed-experimental-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-redux-UltiMed-experimental-onnx) : le modèle parakeet redux en 2 bits auquel on ajoute le changement apporté par l'affinage UltiMed v2, environ 3 fois plus petit que le modèle int8, CPU uniquement |
+| Petit modèle (expérimental) | [Olicorne/parakeet-tdt-0.6b-v3-redux-UltiMed-v2-experimental-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-redux-UltiMed-v2-experimental-onnx) : le modèle parakeet redux en 2 bits auquel on ajoute le changement apporté par l'affinage UltiMed v2, environ 3 fois plus petit que le modèle int8, CPU uniquement |
 | Scripts du jeu de données | [UltiMed-ASR-FR-v2-scripts](https://github.com/UltiMed-Org/UltiMed-ASR-FR-v2-scripts) : génération du texte, synthèse vocale, contrôle qualité, publication |
 | Scripts d'entraînement | [UltiMed-ASR-FR-v2-NeMo_training_scripts](https://github.com/UltiMed-Org/UltiMed-ASR-FR-v2-NeMo_training_scripts) : le fork de NeMo utilisé pour affiner le modèle |
 | Configuration de synthèse vocale | [UltiMed-ASR-FR-v2-Voxtral](https://github.com/UltiMed-Org/UltiMed-ASR-FR-v2-Voxtral) : le banc TTS Voxtral (vLLM + vllm-omni patché) où les cinq voix de la v2 ont été construites et servies |
