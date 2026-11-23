@@ -2,9 +2,6 @@
 
 [English version](https://github.com/UltiMed-Org)
 
-> [!WARNING]
-> **Publication en cours.** UltiMed v2 est en train d'être publié. Tant que cet avertissement est présent, les dépôts, les liens et les chiffres sont encore en cours de modification, et certains liens v2 ci-dessous peuvent ne pas encore fonctionner.
-
 > [!IMPORTANT]
 > **Envie d'améliorations plus rapides ?** Ce projet est entièrement autofinancé sur mon salaire au SMIC, et chaque entraînement se dispute un seul GPU grand public. Si vous ou votre organisation pouvez donner une **RTX 5090**, ou l'argent pour en acheter une d'occasion, cela accélérerait directement les prochaines versions du jeu de données et des modèles. Contactez-moi via [olicorne.org](https://olicorne.org) ou ouvrez une issue sur l'un des dépôts.
 
