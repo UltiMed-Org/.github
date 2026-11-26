@@ -10,12 +10,16 @@ UltiMed est un projet d'[Olivier Cornelis](https://olicorne.org) pour rendre la 
 > [!WARNING]
 > **La v3 est déjà prévue, et elle sera multilingue.** Les v1 et v2 sont uniquement en français.
 
+> [!WARNING]
+> **Utilisez le modèle v1 jusqu'à la sortie de la v3.** Le jeu de données v2 est meilleur que celui de la v1, mais le modèle v2 entraîné dessus est expérimental : sur de la vraie dictée humaine, il fait moins bien que le modèle v1 (exemple : « la prescription venlafaxine » devient « la prescription devant l'accès »). La cause probable est la recette d'entraînement de la v2, pas les données. Configuration recommandée : le [modèle v1](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v1-onnx) avec les [règles regex v2](https://github.com/UltiMed-Org/UltiMed-ASR-FR-v2-regex-fixes) (qui contiennent toutes celles de la v1). Les modèles v1 et v2 sont interchangeables : même architecture, même tokenizer, mêmes fichiers, seuls les poids changent.
+
 ## Version actuelle : v2
 
 | Quoi | Où |
 |---|---|
 | Jeu de données | [Olicorne/UltiMed-ASR-FR-v2](https://huggingface.co/datasets/Olicorne/UltiMed-ASR-FR-v2) sur Hugging Face |
-| Modèle | [Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v2-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v2-onnx) sur Hugging Face (ONNX, fp32 / fp16 / int8 / w4a8) |
+| Modèle (recommandé jusqu'à la v3) | [Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v1-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v1-onnx) sur Hugging Face (ONNX, fp32 / fp16 / int8 / w4a8) |
+| Modèle v2 (expérimental) | [Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v2-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-v2-onnx) : entraîné sur le jeu de données v2, moins bon que la v1 sur de la vraie voix, voir l'avertissement ci-dessus |
 | Petit modèle (expérimental) | [Olicorne/parakeet-tdt-0.6b-v3-redux-UltiMed-v2-experimental-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-redux-UltiMed-v2-experimental-onnx) : le modèle parakeet redux en 2 bits auquel on ajoute le changement apporté par l'affinage UltiMed v2, environ 3 fois plus petit que le modèle int8, CPU uniquement |
 | Scripts du jeu de données | [UltiMed-ASR-FR-v2-scripts](https://github.com/UltiMed-Org/UltiMed-ASR-FR-v2-scripts) : génération du texte, synthèse vocale, contrôle qualité, publication |
 | Scripts d'entraînement | [UltiMed-ASR-FR-v2-NeMo_training_scripts](https://github.com/UltiMed-Org/UltiMed-ASR-FR-v2-NeMo_training_scripts) : le fork de NeMo utilisé pour affiner le modèle |
@@ -35,9 +39,9 @@ UltiMed est un projet d'[Olivier Cornelis](https://olicorne.org) pour rendre la 
 |---|---|
 | [Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx) | Parakeet Ultra en ONNX : le `parakeet-tdt-0.6b-v3` post-entraîné par moondream, généraliste, à partir duquel le modèle UltiMed est affiné |
 
-## Version précédente : v1 (obsolète)
+## Version précédente : v1
 
-Conservée pour référence et reproductibilité. Utilisez la v2.
+Le **modèle** v1 reste le modèle recommandé jusqu'à la v3 (voir l'avertissement ci-dessus). Le reste de la v1 est conservé pour référence et reproductibilité : utilisez le jeu de données, les scripts et les règles regex de la v2.
 
 | Quoi | Où |
 |---|---|
